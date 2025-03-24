@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+		  <!-- Menu sanduíche (mobile) -->
+		  <button class="menu-button" aria-label="Abrir menu">☰</button>
+	  
+		  <!-- Logo -->
+		  <a href="/" aria-label="Página inicial">
+			<img class="logo-cb" src="/assets/img/site-logo-corebiz-preto-cinza.svg" alt="Corebiz" />
+		  </a>
+	  
+		  <!-- Barra de busca -->
+		  <form class="search" role="search" aria-label="Buscar no site">
+			<input type="search" name="q" placeholder="O que está procurando?" aria-label="Buscar" />
+			<img src="/assets/img/magnifying-glass 1.svg" alt="Ícone de busca"/></button> 
+		  </form>
+	  
+		  <!-- Ícones -->
+		  <div class="icons">
+			<a href="/minha-conta" class="icon" aria-label="Minha conta">
+			  	<img src="/assets/img/user 1.svg" alt="Ícone de usuário" />Minha Conta
+			</a>
+			<a href="/carrinho" class="icon" aria-label="Carrinho de compras">
+			  <img src="/assets/img//shopping-cart 1.svg" alt="Ícone de carrinho" />
+			</a>
+		  </div>
+		</div>
+	</header>
+	<main>
+		
+			<div class="glider-contain">
+				<div class="glider">
+				  <div><a href="/"><img src="/assets/img/banners/desk1.png" alt="banner1"></a></div>
+				  <div><a href="/"><img src="/assets/img/banners/desk2.png" alt="banner1"></a></div>
+			</div>
+			
+			<div role="tablist" class="dots"></div>
+		  </div>
+		
+	</main>
+	  
+	
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  
+	<!-- Script de inicialização -->
+	<script>
+	  window.addEventListener('load', function () {
+		new Glider(document.querySelector('.glider'), {
+		  slidesToShow: 1,
+		  dots: '.dots',
+		  arrows: {
+			prev: '.glider-prev',
+			next: '.glider-next'
+		  },
+		  responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			}
+		  ]
+		});
+	  });
+	</script>
+  </body>
+  
+</body>
+</html>
