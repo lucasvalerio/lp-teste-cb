@@ -6,85 +6,126 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-	<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-
+	<!-- Inclusão do CSS do Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 </head>
 <body>
 	<header class="header">
 		<div class="header__top">
-		  <!-- Menu sanduíche (mobile) -->
-		  <button class="menu-button" aria-label="Abrir menu">☰</button>
-	  
-		  <!-- Logo -->
-		  <a href="/" aria-label="Página inicial">
-			<img class="logo-cb" src="/assets/img/site-logo-corebiz-preto-cinza.svg" alt="Corebiz" />
-		  </a>
-	  
-		  <!-- Barra de busca -->
-		  <form class="search" role="search" aria-label="Buscar no site">
-			<input type="search" name="q" placeholder="O que está procurando?" aria-label="Buscar" />
-			<img src="/assets/img/magnifying-glass 1.svg" alt="Ícone de busca"/></button> 
-		  </form>
-	  
-		  <!-- Ícones -->
-		  <div class="icons">
-			<a href="/minha-conta" class="icon" aria-label="Minha conta">
-			  	<img src="/assets/img/user 1.svg" alt="Ícone de usuário" />Minha Conta
+			<!-- Menu sanduíche (mobile) -->
+			<button class="menu-button" aria-label="Abrir menu">☰</button>
+			<!-- Logo -->
+			<a href="/" aria-label="Página inicial">
+				<img class="logo-cb" src="/assets/img/site-logo-corebiz-preto-cinza.svg" alt="Corebiz" />
 			</a>
-			<a href="/carrinho" class="icon" aria-label="Carrinho de compras">
-			  <img src="/assets/img//shopping-cart 1.svg" alt="Ícone de carrinho" />
-			</a>
-		  </div>
+			<!-- Barra de busca -->
+			<form class="search" role="search" aria-label="Buscar no site">
+				<input type="search" name="q" placeholder="O que está procurando?" aria-label="Buscar" />
+				<img src="/assets/img/magnifying-glass 1.svg" alt="Ícone de busca"/>
+			</form>
+			<!-- Ícones -->
+			<div class="icons">
+				<a href="/minha-conta" class="icon" aria-label="Minha conta">
+					<img src="/assets/img/user 1.svg" alt="Ícone de usuário" />Minha Conta
+				</a>
+				<a href="/carrinho" class="icon" aria-label="Carrinho de compras">
+					<img src="/assets/img//shopping-cart 1.svg" alt="Ícone de carrinho" />
+				</a>
+			</div>
 		</div>
 	</header>
 	<main>
-		
-			<div class="glider-contain">
-				<div class="glider">
-				  <div><a href="/"><img src="/assets/img/banners/desk1.png" alt="banner1"></a></div>
-				  <div><a href="/"><img src="/assets/img/banners/desk2.png" alt="banner1"></a></div>
+		<!-- Banner Slider -->
+		<div class="swiper-container banner-swiper" id="banner-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="/">
+						<picture>
+							<source media="(max-width: 768px)" srcset="/assets/img/banners/mob1.png">
+							<source media="(min-width: 769px)" srcset="/assets/img/banners/desk1.png">
+							<img class="img-banner" src="/assets/img/banners/desk1.png" alt="banner1">
+						</picture>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="/">
+						<picture>
+							<source media="(max-width: 768px)" srcset="/assets/img/banners/mob2.png">
+							<source media="(min-width: 769px)" srcset="/assets/img/banners/desk2.png">
+							<img class="img-banner" src="/assets/img/banners/desk2.png" alt="banner2">
+						</picture>
+					</a>
+				</div>
 			</div>
-			
-			<div role="tablist" class="dots"></div>
-		  </div>
-		
+			<!-- Paginação -->
+			<div class="swiper-pagination"></div>
+		</div>
 	</main>
 	  
-	
-	<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+	<!-- Slider de Produtos -->
+	<section class="vitrine">
+		<h2>Mais vendidos</h2>
+		<div class="swiper-container product-swiper">
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-wrapper" id="product-swiper-wrapper">
+				<!-- Os produtos serão inseridos via JS -->
+			</div>
+			<!-- Botões de navegação -->
+			<div class="swiper-button-next"></div>
+		</div>
+	</section>
   
-	<!-- Script de inicialização -->
+	<section class="newsletter" id="newsletter-box">
+		<div id="newsletter-content">
+			<h2>Assine nossa newsletter</h2>
+			<form id="newsletter-form">
+				<input type="text" name="name" placeholder="Seu nome" required />
+				<input type="email" name="email" placeholder="Seu e-mail" required />
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+		<!-- Mensagem de sucesso -->
+		<div id="success-message" class="hidden">
+			<p><strong>Seu e-mail foi cadastrado com sucesso!</strong><br>
+			A partir de agora você receberá as novidades e ofertas exclusivas.
+			</p>
+			<button id="new-subscribe">Cadastrar novo e-mail</button>
+		</div>
+	</section>
+	  
+	<section class="footer-dress">
+		<div class="text19">
+			<p style="font-weight: bold; font-size: 20px;"> Localização </p>
+			<div class="borda"></div>
+			<p class="text20">
+				Avenida Andrômeda, 2000. Bloco 6 e 8 - Alphaville SP<br>
+				brasil@corebiz.ag<br>
+				+55 11 3090 1039
+			</p>
+		</div>
+		<div class="assinatura">
+			<p class="text21">Created by</p>
+			<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/6etQ0lZ98K/jj1olaq8.png" class="image18" />
+		</div>
+	</section>
+	<footer></footer>
+  
+	<!-- Inclusão do JS do Swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<!-- Inicialização do Banner Slider -->
 	<script>
-	  window.addEventListener('load', function () {
-		new Glider(document.querySelector('.glider'), {
-		  slidesToShow: 1,
-		  dots: '.dots',
-		  arrows: {
-			prev: '.glider-prev',
-			next: '.glider-next'
-		  },
-		  responsive: [
-			{
-			  breakpoint: 768,
-			  settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			  }
+		var bannerSwiper = new Swiper('.banner-swiper', {
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
 			},
-			{
-			  breakpoint: 1024,
-			  settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			  }
-			}
-		  ]
 		});
-	  });
 	</script>
-  </body>
   
+	<script src="/assets/js/post-news.js"></script>
+	<script src="/assets/js/shelf.js"></script>
 </body>
 </html>
