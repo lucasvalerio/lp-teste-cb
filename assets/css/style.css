@@ -287,7 +287,6 @@ p.text-endereco {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 69px 0 0 0;
   padding: 24px 0;
   width: 100%;
   font-size: 22px;
@@ -348,7 +347,7 @@ p.text-endereco {
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
-    color: #F8475F
+    color: #F8475F;
     margin-top: 3px;
 }
 #newsletter-form button:hover {
@@ -506,39 +505,6 @@ margin-left: 130px;
   height: 72.04px;
   justify-content: flex-end;
 }
-
-/* Botão CTA do card */
-#product-swiper-wrapper .card button {
-  opacity: 0;
-  border: none;
-  border-radius: 5px;
-  background: var(--button-color, #000);
-  color: var(--light-text-color, #fff);
-  padding: 8px 26px;
-  margin: 8px 0 14px 0px;
-  transition: opacity 0.3s ease;
-}
-
-.cta-button {
-  border: none;
-  border-radius: 5px;
-  background: var(--button-color, #000);
-  color: var(--light-text-color, #fff);
-  padding: 8px 26px;
-  margin: 8px 0 14px 0px;
-  display: none;
-}
-
-/* Efeito hover para o card */
-#product-swiper-wrapper .card:hover {
-  background: var(--card-bg-color, #E6E8EA);
-  transition: background 0.3s ease;
-}
-
-#product-swiper-wrapper .card:hover button {
-  opacity: 1;
-}
-
 /* Responsividade para o slider de produtos */
 @media screen and (max-width: 900px) {
   .vitrine {
