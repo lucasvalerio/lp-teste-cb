@@ -9,6 +9,7 @@
 	<!-- Inclusão do CSS do Swiper -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="https://www.corebiz.ag/wp-content/uploads/2020/06/cropped-logo-corebiz-favicon.png">
 	<title>Document</title>
 </head>
 <body>
@@ -32,6 +33,7 @@
 				</a>
 				<a href="/carrinho" class="icon" aria-label="Carrinho de compras">
 					<img src="/assets/img//shopping-cart 1.svg" alt="Ícone de carrinho" />
+					<span class="cart-count">0</span>
 				</a>
 			</div>
 		</div>
@@ -67,52 +69,67 @@
 	<!-- Slider de Produtos -->
 	<section class="vitrine">
 		<h2>Mais vendidos</h2>
+		<div class="borda-produtos"></div>
 		<div class="swiper-container product-swiper">
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-wrapper" id="product-swiper-wrapper">
 				<!-- Os produtos serão inseridos via JS -->
 			</div>
-			<!-- Botões de navegação -->
 			<div class="swiper-button-next"></div>
 		</div>
 	</section>
   
 	<section class="newsletter" id="newsletter-box">
-		<div id="newsletter-content">
-			<h2>Assine nossa newsletter</h2>
-			<form id="newsletter-form">
-				<input type="text" name="name" placeholder="Seu nome" required />
-				<input type="email" name="email" placeholder="Seu e-mail" required />
-				<button type="submit">Enviar</button>
-			</form>
-		</div>
-		<!-- Mensagem de sucesso -->
-		<div id="success-message" class="hidden">
-			<p><strong>Seu e-mail foi cadastrado com sucesso!</strong><br>
-			A partir de agora você receberá as novidades e ofertas exclusivas.
-			</p>
-			<button id="new-subscribe">Cadastrar novo e-mail</button>
-		</div>
-	</section>
-	  
-	<section class="footer-dress">
-		<div class="text19">
+  <div id="newsletter-content">
+    <h3>Participe de nossas news com promoções e novidades!</h3>
+    <form id="newsletter-form" novalidate>
+      <div>
+        <input type="text" name="name" placeholder="Seu nome" />
+        <span class="alert" id="inputNameAlert"></span>
+      </div>
+      <div>
+        <!-- Mantemos type="email" para aproveitar o teclado otimizado em celulares,
+             mas o "novalidate" garante que não surjam pop-ups nativas. -->
+        <input type="email" name="email" placeholder="Seu e-mail" />
+        <span class="alert" id="inputEmailAlert"></span>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <!-- Mensagem de sucesso -->
+  <div id="success-message" class="hidden">
+    <p><strong>Seu e-mail foi cadastrado com sucesso!</strong><br>
+    A partir de agora você receberá as novidades e ofertas exclusivas.
+    </p>
+    <button id="new-subscribe">Cadastrar novo e-mail</button>
+  </div>
+</section>
+	  <footer>
+	<section class="contactButton footer">
+		
+			<button class="buttonFooter">
+				<img src="/assets/img/mail.svg" alt="icone email">
+				<span> ENTRE EM CONTATO </span>
+			</button>
+			<button class="buttonFooter">
+				<img src="/assets/img/headset.svg" alt="icone email">
+				<span> FALE COM O NOSSO<br>CONSULTOR ONLINE </span>
+			</button>	</section>	
+			<section class="footer-dress">
+		<div class="text-localizacao">
 			<p style="font-weight: bold; font-size: 20px;"> Localização </p>
 			<div class="borda"></div>
-			<p class="text20">
+			<p class="text-endereco">
 				Avenida Andrômeda, 2000. Bloco 6 e 8 - Alphaville SP<br>
 				brasil@corebiz.ag<br>
-				+55 11 3090 1039
-			</p>
-		</div>
+				+55 11 3090 1039	</p></div>
 		<div class="assinatura">
 			<p class="text21">Created by</p>
-			<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/6etQ0lZ98K/jj1olaq8.png" class="image18" />
-		</div>
+			<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/6etQ0lZ98K/jj1olaq8.png" class="image18" />		</div>
 	</section>
-	<footer></footer>
+</footer>
   
-	<!-- Inclusão do JS do Swiper -->
+	<!-- slider -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<!-- Inicialização do Banner Slider -->
 	<script>
@@ -124,8 +141,10 @@
 			},
 		});
 	</script>
-  
+		<!-- script formulario newslwtter -->
 	<script src="/assets/js/post-news.js"></script>
+		<!-- script vitrine -->
 	<script src="/assets/js/shelf.js"></script>
+	<script src="/assets/js/script-count.js"></script>
 </body>
 </html>

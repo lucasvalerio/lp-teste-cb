@@ -24,12 +24,14 @@ html, body {
 /* Topo do header */
 .header__top {
   display: flex;
-  width: 100%;
-  max-width: 1248px;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 20px;
-  padding-top: 16px;
+      width: 100%;
+      max-width: 1248px;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 16px;
+      flex-wrap: wrap;
+      padding-bottom: 12px;
   flex-wrap: wrap; /* Necessário para quebra no mobile */
 }
 
@@ -41,11 +43,13 @@ html, body {
 /* Logo */
 .logo-cb {
   height: 40px;
+  margin-left: 130px;
 }
 
 /* Ícones */
 .icons {
   display: flex;
+  margin-right: 130px;
   gap: 16px;
 }
 
@@ -55,7 +59,7 @@ html, body {
 
 .icon span {
   font-size: 14px;
-  background-color: #7A7A7A;
+  background-color:#F8475F;
 }
 
 /* Menu mobile */
@@ -70,7 +74,8 @@ html, body {
 .search {
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 700px;
+  width: 400px;
   border: none;
   border-bottom: 1px solid #7A7A7A;
   margin-top: 10px;
@@ -106,33 +111,64 @@ p.text-endereco {
 }
 
 /* Assinatura */
+
 .assinatura {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  top: -59px;
+  display: flex
+  ;
+      font-size: 11px;
+      justify-content: flex-end;
+      position: relative;
+      align-items: flex-end;
+      margin: 0 130px 0 0;
+      padding-bottom: 30px;
 }
 
 .assinatura img {
-  margin-left: 25px;
+  margin-left: 5px;
+  height: 18px;
+  margin-bottom: 3px;
 }
 
 /* Footer */
-.footer-dress {
-  background-color: #000;
-  color: #fff;
-  padding-top: 30px;
+.contactButton {
+  background: #000;
   display: flex;
-  justify-content: space-between;
-  height: 213px;
+  justify-content: center;
+  color: #fff;
+  padding: 20px 0 10px;
+  text-decoration: none
+}
+
+.buttonFooter {
+  width: 195px;
+  height: 38px;
+  margin: 0px 1pc;
+  display: flex;
   align-items: center;
-  
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border: none;
+  border-radius: 5px;
+    flex-direction: row;
+  justify-content: center;
+  }
+  .buttonFooter img {
+    margin-right: 19px;
+  }
 
+  .footer-dress {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-.text-localizacao{
+
+.text-localizacao {
   margin: 0 150px;
+  padding-bottom: 30px;
 }
-
 .footer-container {
 
   color: #fff;
@@ -236,6 +272,16 @@ p.text-endereco {
 }
 
 /* Newsletter */
+.cart-count {
+  margin-left: 5px;
+  background: #f8475f;
+  padding: 4px;
+  -webkit-clip-path: circle();
+  clip-path: circle();
+  font-weight: 700;
+  font-size: 10px;
+  color: #fff;}
+
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -282,6 +328,8 @@ p.text-endereco {
 }
 
 #newsletter-form button {
+  width: 140px;
+  height: 48px;
   padding: 10px 40px;
   background-color: black;
   color: white;
@@ -291,7 +339,18 @@ p.text-endereco {
   border-radius: 4px;
   transition: background-color 0.2s;
 }
-
+.alert {
+  display: flex
+;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #F8475F
+    margin-top: 3px;
+}
 #newsletter-form button:hover {
   background-color: #333;
 }
@@ -484,6 +543,7 @@ margin-left: 130px;
 @media screen and (max-width: 900px) {
   .vitrine {
     width: 100%;
+    margin: 0 0px;
   }
 }
 
