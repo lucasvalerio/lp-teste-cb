@@ -1,7 +1,7 @@
 
 # Teste Corebiz Front-end
 
-Uma LP com uma vitrine de produtos com banner rotativo, formulário de newsletter e contador de carrinho persistente, tudo com layout responsivo.
+Uma LP com uma vitrine de produtos com banner rotativo, formulário de newsletter e contador de carrinho persistente.
 
 ## Índice
 
@@ -17,7 +17,7 @@ Uma LP com uma vitrine de produtos com banner rotativo, formulário de newslette
   - [Responsividade](#responsividade)
 - [Estrutura de Arquivos](#estrutura-de-arquivos)
 - [Próximos Passos](#próximos-passos)
-- [Autor](#autor)
+
 
 ## Visão Geral
 
