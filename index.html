@@ -1,151 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-	<!-- Inclusão do CSS do Swiper -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:image" content="https://www.corebiz.ag/wp-content/uploads/2020/06/cropped-logo-corebiz-favicon.png">
-	<title>Document</title>
-</head>
-<body>
-	<header class="header">
-		<div class="header__top">
-			<!-- Menu sanduíche (mobile) -->
-			<button class="menu-button" aria-label="Abrir menu">☰</button>
-			<!-- Logo -->
-			<a href="/" aria-label="Página inicial">
-				<img class="logo-cb" src="/assets/img/site-logo-corebiz-preto-cinza.svg" alt="Corebiz" />
-			</a>
-			<!-- Barra de busca -->
-			<form class="search" role="search" aria-label="Buscar no site">
-				<input type="search" name="q" placeholder="O que está procurando?" aria-label="Buscar" />
-				<img src="/assets/img/magnifying-glass 1.svg" alt="Ícone de busca"/>
-			</form>
-			<!-- Ícones -->
-			<div class="icons">
-				<a href="/minha-conta" class="icon" aria-label="Minha conta">
-					<img src="/assets/img/user 1.svg" alt="Ícone de usuário" />Minha Conta
-				</a>
-				<a href="/carrinho" class="icon" aria-label="Carrinho de compras">
-					<img src="/assets/img//shopping-cart 1.svg" alt="Ícone de carrinho" />
-					<span class="cart-count">0</span>
-				</a>
-			</div>
-		</div>
-	</header>
-	<main>
-		<!-- Banner Slider -->
-		<div class="swiper-container banner-swiper" id="banner-swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<a href="/">
-						<picture>
-							<source media="(max-width: 768px)" srcset="/assets/img/banners/mob1.png">
-							<source media="(min-width: 769px)" srcset="/assets/img/banners/desk1.png">
-							<img class="img-banner" src="/assets/img/banners/desk1.png" alt="banner1">
-						</picture>
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="/">
-						<picture>
-							<source media="(max-width: 768px)" srcset="/assets/img/banners/mob2.png">
-							<source media="(min-width: 769px)" srcset="/assets/img/banners/desk2.png">
-							<img class="img-banner" src="/assets/img/banners/desk2.png" alt="banner2">
-						</picture>
-					</a>
-				</div>
-			</div>
-			<!-- Paginação -->
-			<div class="swiper-pagination"></div>
-		</div>
-	</main>
-	  
-	<!-- Slider de Produtos -->
-	<section class="vitrine">
-		<h2>Mais vendidos</h2>
-		<div class="borda-produtos"></div>
-		<div class="swiper-container product-swiper">
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-wrapper" id="product-swiper-wrapper">
-				<!-- Os produtos serão inseridos via JS -->
-			</div>
-			<div class="swiper-button-next"></div>
-		</div>
-	</section>
-  
-	<section class="newsletter" id="newsletter-box">
-  <div id="newsletter-content">
-    <h3>Participe de nossas news com promoções e novidades!</h3>
-    <form id="newsletter-form" novalidate>
-      <div>
-        <input type="text" name="name" placeholder="Seu nome" />
-        <span class="alert" id="inputNameAlert"></span>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="https://www.corebiz.ag/wp-content/uploads/2020/06/cropped-logo-corebiz-favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://www.corebiz.ag/wp-content/uploads/2020/06/cropped-logo-corebiz-favicon.png">
+    <title>Corebiz</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <!-- Menu sanduíche (mobile) -->
+        <button class="menu-button" aria-label="Abrir menu">☰</button>
+        <!-- Logo -->
+        <a href="/" aria-label="Página inicial">
+          <img class="logo-cb" src="/assets/img/site-logo-corebiz-preto-cinza.svg" alt="Corebiz" />
+        </a>
+        <!-- Barra de busca -->
+        <form class="search" role="search" aria-label="Buscar no site">
+          <input type="search" name="q" placeholder="O que está procurando?" aria-label="Buscar" />
+          <img src="/assets/img/magnifying-glass 1.svg" alt="Ícone de busca" />
+        </form>
+        <!-- Ícones -->
+        <div class="icons">
+          <a href="/minha-conta" class="icon" aria-label="Minha conta">
+            <img src="/assets/img/user 1.svg" alt="Ícone de usuário" />Minha Conta </a>
+          <a href="/carrinho" class="icon" aria-label="Carrinho de compras">
+            <img src="/assets/img//shopping-cart 1.svg" alt="Ícone de carrinho" />
+            <span class="cart-count">0</span>
+          </a>
+        </div>
       </div>
-      <div>
-        <!-- Mantemos type="email" para aproveitar o teclado otimizado em celulares,
+    </header>
+    <main>
+      <!-- Banner Slider -->
+      <div class="swiper-container banner-swiper" id="banner-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="/">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/assets/img/banners/mob1.png">
+                <source media="(min-width: 769px)" srcset="/assets/img/banners/desk1.png">
+                <img class="img-banner" src="/assets/img/banners/desk1.png" alt="banner1">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/assets/img/banners/mob2.png">
+                <source media="(min-width: 769px)" srcset="/assets/img/banners/desk2.png">
+                <img class="img-banner" src="/assets/img/banners/desk2.png" alt="banner2">
+              </picture>
+            </a>
+          </div>
+        </div>
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+    <!-- Slider de Produtos -->
+    <section class="vitrine">
+      <h2>Mais vendidos</h2>
+      <div class="borda-produtos"></div>
+      <div class="swiper-container product-swiper">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-wrapper" id="product-swiper-wrapper">
+          <!-- Os produtos serão inseridos via JS -->
+        </div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="newsletter" id="newsletter-box">
+      <div id="newsletter-content">
+        <h3>Participe de nossas news com promoções e novidades!</h3>
+        <form id="newsletter-form" novalidate>
+          <div>
+            <input type="text" name="name" placeholder="Seu nome" />
+            <span class="alert" id="inputNameAlert"></span>
+          </div>
+          <div>
+            <!-- Mantemos type="email" para aproveitar o teclado otimizado em celulares,
              mas o "novalidate" garante que não surjam pop-ups nativas. -->
-        <input type="email" name="email" placeholder="Seu e-mail" />
-        <span class="alert" id="inputEmailAlert"></span>
+            <input type="email" name="email" placeholder="Seu e-mail" />
+            <span class="alert" id="inputEmailAlert"></span>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
       </div>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-  <!-- Mensagem de sucesso -->
-  <div id="success-message" class="hidden">
-    <p><strong>Seu e-mail foi cadastrado com sucesso!</strong><br>
-    A partir de agora você receberá as novidades e ofertas exclusivas.
-    </p>
-    <button id="new-subscribe">Cadastrar novo e-mail</button>
-  </div>
-</section>
-	  <footer>
-	<section class="contactButton footer">
-			
-			<button class="buttonFooter">
-				<img src="/assets/img/mail.svg" alt="icone email">
-				<span> ENTRE EM CONTATO </span>
-			</button>
-			
-			<button class="buttonFooter">
-				<img src="/assets/img/headset.svg" alt="icone email">
-				<span> FALE COM O NOSSO<br>CONSULTOR ONLINE </span>
-			</button>	</section>	
-			<section class="footer-dress">
-		<div class="text-localizacao">
-			<p style="font-weight: bold; font-size: 20px;"> Localização </p>
-			<div class="borda"></div>
-			<p class="text-endereco">
-				Avenida Andrômeda, 2000. Bloco 6 e 8 - Alphaville SP<br>
-				brasil@corebiz.ag<br>
-				+55 11 3090 1039	</p></div>
-		<div class="assinatura">
-			<p class="text21">Created by</p>
-			<img src="https://storage.googleapis.com/tagjs-prod.appspot.com/6etQ0lZ98K/jj1olaq8.png" class="image18" />		</div>
-	</section>
-</footer>
-  
-	<!-- slider -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-	<!-- Inicialização do Banner Slider -->
-	<script>
-		var bannerSwiper = new Swiper('.banner-swiper', {
-			loop: true,
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-		});
-	</script>
-		<!-- script formulario newslwtter -->
-	<script src="/assets/js/post-news.js"></script>
-		<!-- script vitrine -->
-	<script src="/assets/js/shelf.js"></script>
-	<script src="/assets/js/script-count.js"></script>
-</body>
+      <!-- Mensagem de sucesso -->
+      <div id="success-message" class="hidden">
+        <p>
+          <strong>Seu e-mail foi cadastrado com sucesso!</strong>
+          <br> A partir de agora você receberá as novidades e ofertas exclusivas.
+        </p>
+        <button id="new-subscribe">Cadastrar novo e-mail</button>
+      </div>
+    </section>
+    <footer>
+      <section class="contactButton footer">
+        <button class="buttonFooter">
+          <img src="/assets/img/mail.svg" alt="icone email">
+          <span> ENTRE EM CONTATO </span>
+        </button>
+        <button class="buttonFooter">
+          <img src="/assets/img/headset.svg" alt="icone email">
+          <span> FALE COM O NOSSO <br>CONSULTOR ONLINE </span>
+        </button>
+      </section>
+      <section class="footer-dress">
+        <div class="text-localizacao">
+          <p style="font-weight: bold; font-size: 20px;"> Localização </p>
+          <div class="borda"></div>
+          <p class="text-endereco"> Avenida Andrômeda, 2000. Bloco 6 e 8 - Alphaville SP <br> brasil@corebiz.ag <br> +55 11 3090 1039 </p>
+        </div>
+        <div class="assinatura">
+          <p class="text21">Created by</p>
+          <img src="https://storage.googleapis.com/tagjs-prod.appspot.com/6etQ0lZ98K/jj1olaq8.png" class="image18" />
+        </div>
+      </section>
+    </footer>
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Inicialização do Banner Slider -->
+    <script>
+      var bannerSwiper = new Swiper('.banner-swiper', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- script formulario newslwtter -->
+    <script src="/assets/js/post-news.js"></script>
+    <!-- script vitrine -->
+    <script src="/assets/js/shelf.js"></script>
+    <script src="/assets/js/script-count.js"></script>
+  </body>
 </html>

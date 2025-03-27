@@ -24,15 +24,14 @@ html, body {
 /* Topo do header */
 .header__top {
   display: flex;
-      width: 100%;
-      max-width: 1248px;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 20px;
-      padding-top: 16px;
-      flex-wrap: wrap;
-      padding-bottom: 12px;
-  flex-wrap: wrap; /* Necessário para quebra no mobile */
+  width: 100%;
+  max-width: 1248px;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 16px;
+  flex-wrap: wrap;
+  padding-bottom: 12px; /* Ajuste adicional se necessário */
 }
 
 .header__top a {
@@ -59,7 +58,7 @@ html, body {
 
 .icon span {
   font-size: 14px;
-  background-color:#F8475F;
+  background-color: #F8475F;
 }
 
 /* Menu mobile */
@@ -100,27 +99,23 @@ html, body {
   margin-left: 8px;
 }
 
-
 /* Parágrafo com classe text20 */
 p.text-endereco {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
- 
 }
 
 /* Assinatura */
-
 .assinatura {
-  display: flex
-  ;
-      font-size: 11px;
-      justify-content: flex-end;
-      position: relative;
-      align-items: flex-end;
-      margin: 0 130px 0 0;
-      padding-bottom: 30px;
+  display: flex;
+  font-size: 11px;
+  justify-content: flex-end;
+  position: relative;
+  align-items: flex-end;
+  margin: 0 130px 0 0;
+  padding-bottom: 30px;
 }
 
 .assinatura img {
@@ -136,7 +131,7 @@ p.text-endereco {
   justify-content: center;
   color: #fff;
   padding: 20px 0 10px;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .buttonFooter {
@@ -150,19 +145,19 @@ p.text-endereco {
   line-height: 16px;
   border: none;
   border-radius: 5px;
-    flex-direction: row;
+  flex-direction: row;
   justify-content: center;
-  }
-  .buttonFooter img {
-    margin-right: 19px;
-  }
+}
+.buttonFooter img {
+  margin-right: 19px;
+}
 
-  .footer-dress {
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+.footer-dress {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .text-localizacao {
@@ -170,7 +165,6 @@ p.text-endereco {
   padding-bottom: 30px;
 }
 .footer-container {
-
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -192,7 +186,7 @@ p.text-endereco {
 
 .borda {
   border-bottom: solid 6px #fff;
-  width: 48px;;
+  width: 48px;
 }
 
 .buttom-footer {
@@ -231,7 +225,7 @@ p.text-endereco {
   }
 }
 
-
+/* Banner */
 .img-banner {
   width: 100%;
   height: auto;
@@ -241,18 +235,18 @@ p.text-endereco {
 .banner-swiper {
   position: relative;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background: #BDBDBD !important;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background: #F8475F !important;
 }
 
 .swiper-button-next:after,
-  .swiper-button-prev:after {
+.swiper-button-prev:after {
   color: #000 !important;
   font-size: 22px !important;
-  }
+}
 
 /* Label de desconto global (para outros usos, se houver) */
 .off {
@@ -280,7 +274,8 @@ p.text-endereco {
   clip-path: circle();
   font-weight: 700;
   font-size: 10px;
-  color: #fff;}
+  color: #fff;
+}
 
 .newsletter {
   display: flex;
@@ -339,16 +334,13 @@ p.text-endereco {
   transition: background-color 0.2s;
 }
 .alert {
-  display: flex
-;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    color: #F8475F;
-    margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #F8475F;
+  margin-top: 3px;
 }
 #newsletter-form button:hover {
   background-color: #333;
@@ -390,39 +382,39 @@ p.text-endereco {
 .vitrine {
   width: 1261px;
   height: auto;
-  margin: 0 30px ;
+  margin: 0 30px;
 }
 
 .vitrine h2 {
-  margin: 0 130px 
+  margin: 0 130px;
 }
 .borda-produtos {
-border-bottom: solid 6px #C0C0C0;
-width: 48px;
-margin-bottom: 10px;
-margin-left: 130px;
+  border-bottom: solid 6px #C0C0C0;
+  width: 48px;
+  margin-bottom: 10px;
+  margin-left: 130px;
 }
 
-.stars{
+.stars {
   color: #F8475F;
-}	
+}
 
-.preco-de{
+.preco-de {
   font-weight: 400;
-          font-size: 12px;
-          line-height: 16px;
-          text-decoration-line: line-through;
-          color: #7A7A7A;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration-line: line-through;
+  color: #7A7A7A;
 }
 
-.preco-por{
+.preco-por {
   font-weight: 700;
-          font-size: 18px;
-          line-height: 25px;
-          color: #000;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
 }
 
-.parcelamento{
+.parcelamento {
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
@@ -449,6 +441,7 @@ margin-left: 130px;
   background: var(--card-bg-color, #E6E8EA);
   transition: background 0.3s ease;
 }
+
 #product-swiper-wrapper .card img {
   width: 216px;
   height: 200px;
@@ -505,11 +498,12 @@ margin-left: 130px;
   height: 72.04px;
   justify-content: flex-end;
 }
+
 /* Responsividade para o slider de produtos */
 @media screen and (max-width: 900px) {
   .vitrine {
     width: 100%;
-    margin: 0 0px;
+    margin: 0;
   }
 }
 
@@ -556,5 +550,52 @@ margin-left: 130px;
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
+  }
+}
+
+/* ============================================
+   Ajustes de Responsividade (Newsletter e Footer)
+   ============================================ */
+@media (max-width: 768px) {
+  /* Newsletter: empilha inputs e botão */
+  .newsletter {
+    padding: 16px;
+  }
+  #newsletter-form {
+    flex-direction: column;
+    gap: 8px;
+  }
+  #newsletter-form input,
+  #newsletter-form button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Footer: empilha elementos e centraliza */
+  .footer-dress {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+  .text-localizacao {
+    margin: 20px 0;
+  }
+  .assinatura {
+    margin: 10px 0 0;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .contactButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 0;
+  }
+  .buttonFooter {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
   }
 }
